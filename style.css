@@ -1,278 +1,51 @@
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: #fff;
-  color: #333;
-}
-
 /* Header */
 header {
-  background-color: #1a1a1a;
-  padding: 10px 20px;
+    background-color: #1a1a1a;
+    padding: 15px 20px;
+    color: white;
 }
 
 header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;  /* This ensures space between the logo and menu */
+    align-items: center;
 }
 
-header .logo {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #f8c21f; /* Gold color */
+header .logo h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #f8c21f;  /* Gold color */
 }
 
 header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Spacing between menu items */
 }
 
 header nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    color: #f8c21f; /* Gold color on hover */
 }
 
 header nav ul li a.active {
-  border-bottom: 2px solid #f8c21f;
+    border-bottom: 3px solid #f8c21f; /* Highlight active menu item */
 }
-
-/* Hero Section */
-.hero {
-  background-image: url('media1.jpg'); /* Adjust media path */
-  background-size: cover;
-  background-position: center;
-  padding: 80px 20px;
-  color: white;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.5em;
-}
-
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.hero .btn-gold {
-  background-color: #f8c21f;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: black;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-/* Service Section */
-.services-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 40px 20px;
-}
-
-.service-box {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.service-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.service-box img {
-  max-width: 100px;
-  margin-bottom: 15px;
-}
-
-.service-box h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-.service-box p {
-  font-size: 1em;
-}
-
-/* About Section */
-.about-section {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-}
-
-.about-section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.about-section p {
-  font-size: 1.1em;
-  margin-bottom: 30px;
-}
-
-.testimonial-carousel {
-  display: flex;
-  overflow: hidden;
-  gap: 30px;
-}
-
-.testimonial-box {
-  min-width: 300px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-box p {
-  font-size: 1em;
-}
-
-.testimonial-box span {
-  display: block;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-top: 10px;
-  text-align: right;
-}
-
-/* Contact Section */
-.contact-section {
-  padding: 60px 20px;
-}
-
-.contact-section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.contact-form button {
-  background-color: #f8c21f;
-  padding: 15px;
-  border: none;
-  color: white;
-  font-size: 1.1em;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #e6b12d;
-}
-
 /* Footer */
 footer {
-  background-color: #1a1a1a;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
 }
 
 footer p {
-  font-size: 1em;
-  margin-bottom: 10px;
-}
-
-footer a {
-  color: #f8c21f;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Floating WhatsApp Button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  border-radius: 50%;
-  padding: 15px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.whatsapp-float img {
-  width: 50px;
-  height: 50px;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  header .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .services-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .service-box {
-    padding: 15px;
-  }
-
-  .hero h1 {
-    font-size: 2em;
-  }
-
-  .hero p {
-    font-size: 1em;
-  }
-
-  .contact-section {
-    padding: 40px 20px;
-  }
-
-  footer p {
-    font-size: 0.9em;
-  }
-}
-
-@media (max-width: 480px) {
-  .services-container {
-    grid-template-columns: 1fr;
-  }
-
-  .service-box {
-    padding: 10px;
-  }
-
-  .hero h1 {
-    font-size: 1.5em;
-  }
-
-  .hero p {
-    font-size: 0.9em;
-  }
+    margin: 0;
 }
