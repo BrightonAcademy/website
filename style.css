@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    display: flex;
+    flex-direction: row;
 }
 
 .container {
@@ -12,13 +14,58 @@ body {
     padding: 0 20px;
 }
 
+/* Left Menu */
+.menu {
+    width: 200px;
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.menu ul li a:hover {
+    background-color: #f8c21f;
+    display: block;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
 /* Hero Section */
 .hero {
-    background: url('images/brighton-logo.png') no-repeat center center/cover; /* Corrected the image path */
-    color: black; /* Set text color */
+    background: url('images/brighton-logo.png') no-repeat center center/cover;
+    color: white;
     text-align: center;
     padding: 100px 20px;
     height: 400px;
+    margin-left: 220px; /* To avoid overlap with left menu */
 }
 
 .hero .container {
@@ -49,6 +96,43 @@ body {
 
 .hero .btn-gold:hover {
     background-color: #d9a313;
+}
+
+/* Cover Section with Carousel */
+.cover-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #f1f1f1;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: carouselAnimation 12s infinite;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes carouselAnimation {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    50% { opacity: 0; }
+    75% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 /* Services Section */
@@ -96,10 +180,11 @@ body {
 /* Footer */
 footer {
     background-color: #1a1a1a;
-    color: gold;
+    color: white;
     text-align: center;
     padding: 20px 0;
     font-size: 1em;
+    margin-top: 50px;
 }
 
 footer p {
@@ -135,7 +220,7 @@ footer a:hover {
 /* Mobile Responsiveness */
 @media only screen and (max-width: 768px) {
     .service-box {
-        grid-template-columns: 1fr 1fr; /* For tablet screens */
+        grid-template-columns: 1fr 1fr;
     }
 
     .hero h1 {
@@ -145,27 +230,4 @@ footer a:hover {
     .hero p {
         font-size: 1.2em;
     }
-
-    .hero .btn-gold {
-        font-size: 1em;
-    }
 }
-
-@media only screen and (max-width: 480px) {
-    .service-box {
-        grid-template-columns: 1fr; /* For mobile screens */
-    }
-
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1.1em;
-    }
-
-    .hero .btn-gold {
-        font-size: 0.9em;
-    }
-}
-
