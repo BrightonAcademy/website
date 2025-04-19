@@ -12,22 +12,22 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- HEADER / NAVBAR -->
   <header>
     <div class="container nav-container">
-      <nav class="navbar">
+      <div class="logo">Brighton Academy</div>
+      <nav>
         <ul class="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="logo">Brighton Academy</div>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" data-aos="fade-up">
+  <!-- HERO SECTION -->
+  <section class="hero" data-aos="fade-down">
     <div class="container">
       <h1>Empowering Bright Minds</h1>
       <p>Premium Coaching for IB & CBSE in Anna Nagar</p>
@@ -35,21 +35,36 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="services-section" data-aos="fade-up">
+  <!-- SERVICES SECTION -->
+  <section class="services" data-aos="fade-up">
     <div class="container">
       <h2>Our Services</h2>
-      <div class="services-grid">
-        <div class="service-card">IB Maths Coaching</div>
-        <div class="service-card">CBSE 9 & 10 Coaching</div>
-        <div class="service-card">IGCSE Full Support</div>
-        <div class="service-card">Weekly Assessments</div>
-        <div class="service-card">Personalized Mentoring</div>
+      <div class="service-boxes">
+        <div class="service-box" data-aos="zoom-in" data-aos-delay="100">
+          <h3>IB Coaching</h3>
+          <p>Expert coaching for IB students with personalized attention.</p>
+        </div>
+        <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
+          <h3>CBSE Coaching</h3>
+          <p>Comprehensive coaching for CBSE students from grades 9 to 12.</p>
+        </div>
+        <div class="service-box" data-aos="zoom-in" data-aos-delay="300">
+          <h3>Maths Specialization</h3>
+          <p>Specialized in Maths for all grade levels and boards.</p>
+        </div>
+        <div class="service-box" data-aos="zoom-in" data-aos-delay="400">
+          <h3>Science Coaching</h3>
+          <p>Enhancing understanding of Science subjects for students.</p>
+        </div>
+        <div class="service-box" data-aos="zoom-in" data-aos-delay="500">
+          <h3>Abacus & Handwriting</h3>
+          <p>Developing brain power through Abacus and improving handwriting.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
     <div class="container footer-content">
       <p>© 2025 Brighton Academy | All Rights Reserved</p>
@@ -58,14 +73,16 @@
     </div>
   </footer>
 
-  <!-- WhatsApp Button -->
+  <!-- WHATSAPP BUTTON -->
   <a href="https://wa.me/918939291278" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
     <img src="whatsapp-icon.png" alt="WhatsApp" />
   </a>
 
-  <!-- JS -->
+  <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
-  <script>AOS.init({ duration: 1000 });</script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>
