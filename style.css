@@ -49,3 +49,15 @@ footer {
 footer p {
     margin: 0;
 }
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 0;
+}
