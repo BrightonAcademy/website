@@ -1,82 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learn more about Brighton Academy, our mission to provide high-quality coaching for IB and CBSE students, and read testimonials from our satisfied clients." />
-  <meta name="keywords" content="Brighton Academy, tuition center Chennai, IB coaching, CBSE tuition, Anna Nagar, student success" />
-  <meta name="author" content="Brighton Academy" />
-  <title>About Us | Brighton Academy</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About Us - Brighton Academy</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Brighton Academy - Providing expert tuition for CBSE and IB students. Learn about our mission, vision, and the testimonials of our students.">
+    <meta name="keywords" content="About Brighton Academy, IB Tuition, CBSE Tuition, Education in Chennai, Expert Tuition">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="About Us - Brighton Academy">
+    <meta property="og:description" content="Learn about Brighton Academy and how we empower students through personalized tuition.">
+    <meta property="og:url" content="https://brighton-academy-vz66.vercel.app/about">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- HEADER / NAVBAR -->
-  <header>
-    <div class="container nav-container">
-      <div class="logo">Brighton Academy</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- ABOUT US SECTION -->
-  <section class="about-us" data-aos="fade-up">
-    <div class="container">
-      <h1>About Brighton Academy</h1>
-      <p>Brighton Academy is dedicated to empowering bright minds with personalized coaching tailored to the needs of each student. We offer premium tutoring for IB and CBSE students, specializing in Maths, Science, and more.</p>
-      
-      <h2>Our Mission</h2>
-      <p>Our mission is to provide a holistic learning experience that helps students excel academically and develop essential skills for their future. We believe in empowering students to become confident learners and thinkers.</p>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS SECTION (Carousel) -->
-  <section class="testimonials" data-aos="fade-up">
-    <div class="container">
-      <h2>What Our Students Say</h2>
-      <div class="testimonial-carousel">
-        <div class="testimonial-slide" data-aos="fade-in">
-          <p>"The coaching at Brighton Academy helped me excel in my exams. The tutors are dedicated, and the learning environment is fantastic."</p>
-          <p><strong>- Rajesh, IB Student</strong></p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Brighton Academy Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="testimonial-slide" data-aos="fade-in">
-          <p>"Brighton Academy made a huge difference in my confidence. I improved in both Maths and Science within a few months."</p>
-          <p><strong>- Priya, CBSE Student</strong></p>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <h1>About Brighton Academy</h1>
+        <p>At Brighton Academy, we focus on empowering bright minds by offering expert coaching for CBSE and IB students. Our personalized approach ensures that every student receives the attention they need to excel.</p>
+
+        <h2>Mission & Vision</h2>
+        <p><strong>Mission:</strong> To provide personalized education that encourages academic excellence and builds confidence in students.</p>
+        <p><strong>Vision:</strong> To be the leading tuition provider for IB and CBSE students in Chennai, nurturing their potential to achieve great success.</p>
+
+        <h2>What Our Students Say</h2>
+        <div class="testimonials">
+            <!-- Testimonials carousel will go here -->
+            <div class="testimonial">
+                <p>"Brighton Academy helped me understand Math concepts in a way I never thought possible. The tutors are amazing!" - Student A</p>
+            </div>
+            <div class="testimonial">
+                <p>"The personalized attention at Brighton Academy made all the difference in my grades. I highly recommend them!" - Student B</p>
+            </div>
         </div>
-        <div class="testimonial-slide" data-aos="fade-in">
-          <p>"Excellent teachers and a great learning environment. I highly recommend Brighton Academy to any student seeking extra coaching."</p>
-          <p><strong>- Arvind, IB Student</strong></p>
-        </div>
-      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Brighton Academy. All rights reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/8939291278" target="_blank">
+            <img src="images/whatsapp-icon.png" alt="WhatsApp">
+        </a>
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-content">
-      <p>© 2025 Brighton Academy | All Rights Reserved</p>
-      <p>Anna Nagar, Chennai | Call: 8939291278</p>
-      <p>Follow us: <a href="https://instagram.com/brightonacademy.ac" target="_blank">Instagram</a></p>
-    </div>
-  </footer>
-
-  <!-- WHATSAPP BUTTON -->
-  <a href="https://wa.me/918939291278" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
-    <img src="whatsapp-icon.png" alt="WhatsApp" />
-  </a>
-
-  <!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js"></script>
-  <script>
-    AOS.init({ duration: 1000 });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
